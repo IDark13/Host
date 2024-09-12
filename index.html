@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home coming</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="intro-music" src="music/PEDRO.mp3" autoplay controls></audio>
+    <script> 
+        window.addEventListener('load', function() {
+        var audio = document.getElementById('intro-music');
+        audio.play();
+    });    
+
+    </script>
+
+    <table style="width: 500px;">
+        <thead>
+        <tr> <!-- tr= una fila dentro de la tabla-->
+            <th>Producto</th><!--cabecera-->
+            <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gato</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>ornitorrinco</td>
+                <td>$590.45</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: $590.45</td> <sup>2</sup> <!-- al cuadrado -->
+        </tfoot>
+    </table>
+
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elmento 1</li>
+        <li>Elmento 2</li>
+        <li>Elmento 3</li>
+        <li>Elmento 4</li>
+    </ul>
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="10">Elmento 1</li> <!--le da un valor al listado-->
+        <li>Elmento 2</li>
+        <li>Elmento 3</li>
+        <li>Elmento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-roman">sub elemento 1</li>
+                <li style="list-style-type:lower-roman">sub elemento 2</li>
+                <li style="list-style-type:lower-roman">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/fomulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input value="opc" type="" id="nombre" name="nombre" placeholder="Nombre"/> 
+        <br>
+        <label for="apellido">apellido</label>
+        <input value="feliz" type="" id="apellido" name="apellido" placeholder="apellido"/> 
+        <!--for y id con las mismas variables hace que puedas seleccionar la cajita input 
+        con solo picar el Nombre (label)-->
+        <!--placeholder deja una notita nitida dentro del input (como indicacion)
+        type es para indicar el tipo de dato o elemento que toma input ya sea boton o contraseña, etc-->
+        <br>
+        <label for="comentario">comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">valor por defecto</textarea>
+        <br>
+        <button type="button"><!--si aqui ponemos <img src y la direccion de la imagen> podemos ponerle una img al boton-->
+            tipo boton</button>
+        <button type="reset">tipo reset</button>
+        <button type="submit">tipo submit</button>
+        <!--<input type="submit"/> 
+        el tipo submit es el boton de enviar-->
+        
+    </form>
+    <h1>este es un heading (h1) </h1>
+    <h2>este es un heading 2 (h2)</h2>
+    <h3>heading 3 (h3)</h3>
+    <h4>heandig 4 (h4)</h4>
+    <h5>heading 5 (h5)</h5>
+    <h6>heandig 6 (h6)</h6>
+    <p>en el oxxo hay cocas 3x$50</p>
+    <P>pero solo de lunes a jueves de 10am a 4pm. </P>
+    <hr>
+    <h1>hr crea una linea que separa este titulo del texto anterior</h1>
+    <!--este es una etiqueta de comentario como un //-->
+    <p>este texto solo es <span style="color:crimson">relleno</span> para poder mostrar la etiqueta de <span>span</span>
+       <br> y usando style="color: y el color que quieras" esa palabra cambia de color</p>
+       <a target="_blank" href="https:youtube.com/">link para abrir youtube</a>
+       <!--target="blank" sirve para abrir otra pestaña al abrir el link-->
+       <br>
+       <img src="img/garfield.png" width="450"/>
+       
+</body>
+</html>
